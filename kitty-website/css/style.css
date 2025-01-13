@@ -1,0 +1,270 @@
+
+html,body{
+    height: 100%;
+}
+html{
+    display: table;
+    margin: 5%;
+}
+body{
+    display: table-cell;
+    vertical-align: middle;
+    background-color: black;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    justify-content: space-evenly;
+}
+span{
+    position: relative;
+    color: rgb(168, 168, 140);
+}
+span::before{
+    content: "";
+    background-color:rgb(86, 163, 163);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    transition: 0.3s ease-in-out;
+}
+span:hover::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+}
+.hero_image-container{
+    position: relative;
+    display: flex;
+}
+.hero-image{
+    width: 300px;
+    border-radius: 20px;
+}
+@font-face{
+    font-family: roboto;
+    src: url('../css/fonts/Roboto-Medium.ttf');
+}
+.text-on-cat{
+    font-family: roboto;
+    position: absolute;
+  top: 5%;
+  left:17%;
+  font-size: 200px;
+  font-weight: 900;
+  color: rgb(143, 136, 136);
+}
+
+.text-on-cat2{
+    font-family: roboto;
+    position: absolute;
+    bottom:10%;
+  left:17%;
+  font-size: 30px;
+  color: rgb(143, 136, 136);
+  font-variant: small-caps;
+}
+.fa-paw{
+    color: yellow;
+    font-size: 100px;
+    position: absolute;
+    top: 22%;
+    right: 15%;
+}
+@font-face{
+    font-family: rubiks;
+    src: url('../css/fonts/RubikBubbles-Regular.ttf');
+}
+.text-on-cat3{
+    font-family: rubiks;
+    font-size: 50px;
+    position: absolute;
+    left: 400px;
+    bottom: 300px;
+    color: rgb(224, 212, 212);
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+/*@media( prefers-reduced-motion ){
+    .hidden{
+        transition: none;
+    }
+}*/
+
+.logos{
+    display: flex;
+}
+.logo:nth-child(2){
+    transition-delay: 200ms;
+}
+.logo:nth-child(3){
+    transition-delay: 400ms;
+}
+.logo:nth-child(4){
+    transition-delay: 600ms;
+}/*
+.logo:nth-child(5){
+    transition-delay: 800ms;
+}
+.logo:nth-child(6){
+    transition-delay: 1000ms;
+}
+.logo:nth-child(7){
+    transition-delay: 1200ms;
+}
+.logo:nth-child(8){
+    transition-delay: 1400ms;
+}
+.logo:nth-child(9){
+    transition-delay: 1600ms;
+}*/
+.follow-us{
+    display: grid;
+    gap: 1em;
+}
+.footer-heading2{
+    font-size: 30px;
+}
+
+.image1{
+    width: 100px;
+    height: 100px;
+    float: right;
+    padding: 20px;
+    padding-top: 0;
+}
+.footer-heading{
+    float: right;
+    font-size: 80px;
+    
+}
+.fa-color{
+    color: blue;
+}
+
+
+
+
+.facts-container{
+    width: 85vmin;
+    position: absolute;
+    transform: translate(-50%,-50%);
+   top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border-radius: 10em;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 10s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    15%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-100%);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-200%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    70%{
+        transform: translateX(-300%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    90%{
+        transform: translateX(-400%);
+    }
+   100%{
+        transform: translateX(-500%);
+    }
+}
+.facts-image{
+    width:100%;
+}
+.facts-aside{
+    display: grid;
+    gap: 2rem;
+    font-size: 2.3rem;
+}
+h2{
+    color: rgb(196, 188, 188);
+}
+
+p{
+    display: grid;
+}
+.inner-container{
+    position: relative;
+}
+/*.image-on-image{
+    position: absolute;
+    left: 35%;
+    bottom: -30%;
+    border-radius: 5rem;
+}*/
+.pet-care-hero-image{
+    width: 400px;
+}
+.care-text{
+    position: absolute;
+    right: -80%;
+    top: 20%;
+    font-family: rubiks;
+    font-size: 50px;
+}
+button{
+    background-color: yellow;
+    border: transparent;
+    border-radius: 3em;
+    box-shadow: 2px 0 15px white;
+    padding: 8px;
+    width: 8rem;
+}
+button:hover{
+    transform: scale(2);
+}
+.reservation-button{
+    position: absolute;
+    bottom: 15%;
+    left: 100%;
+}
+.review-button{
+    position: absolute;
+    left: 150%;
+    bottom: 15%;
+}
+.services{
+    text-align: center;
+}
