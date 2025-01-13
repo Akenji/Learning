@@ -1,0 +1,67 @@
+body{
+    background-color: gainsboro;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    background-color: whitesmoke;
+}
+.bi-color{
+    color: blue;
+    font-size: 40px;
+    font-weight: 800;
+}
+.form{
+    display: flex;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+justify-content: space-evenly;
+padding: 30px;
+width: 500px;
+}
+.button{
+    background-color: blue;
+    border: transparent;
+    padding: 10px;
+    color: white;
+    box-shadow: 3px 5px 3px rgba(57, 57, 204, 0.4) ;
+}
+.email, .password{
+    padding: 10px;
+    border: 1px solid blue;
+    box-shadow: 3px 5px 3px  rgba(57, 57, 204, 0.4);
+}
+.register{
+    font-weight: 700;
+    font-size: larger;
+}
+.reg-page{
+    color: gray;
+}
+.wlcm{
+    color: gray;
+    font-variant: small-caps;
+}
+.direction{
+    padding-left: 250px;
+}
+.direction a{
+    font-weight: 900;
+    color: rgb(20, 20, 211);
+
+}
+.required::after{
+    content: '*';
+    color: red;
+    font-size: 20px;
+}
