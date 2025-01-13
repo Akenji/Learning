@@ -1,0 +1,20 @@
+body{    
+    background-color:rgb(158, 114, 114);
+}
+
+#h1{
+    float: right;
+animation-name: black-to-red;
+animation-duration: 3.5s;
+animation-timing-function: ease-in-out;
+animation-delay: 0.5s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+@keyframes black-to-red {
+0% {background: rgb(143, 83, 83); transform: translate(0px, 0px);}
+50% {background: rgb(129, 129, 62);  transform: translate(10px, 10px);}
+75% {background: rgb(74, 67, 124); transform: translate(20px, 20px);}
+100% {background: rgb(129, 49, 49);  transform: translate(25px, 25px);}
+}

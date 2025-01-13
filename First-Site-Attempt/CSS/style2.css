@@ -1,0 +1,37 @@
+body {
+    background-color:rgb(187, 156, 156);
+}
+
+
+#wlcm {
+    animation-name: black-to-red;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes black-to-red {
+    0% {background: rgb(92, 62, 62); transform: translate(0px, 0px);}
+    50% {background: rgb(175, 175, 15);  transform: translate(10px, 10px);}
+    75% {background: slateblue; transform: translate(20px, 20px);}
+    100% {background: rgb(175, 41, 41);  transform: translate(25px, 25px);}
+}
+
+.paragraphs {
+    font: alex brush;
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+#sub-table {
+   
+   
+    background-color:rgb(140, 163, 172) ; 
+}
+
+#main-table{
+    border: 6px double rgb(110, 141, 110);
+    background-color:rgb(107, 155, 173) ; 
+}

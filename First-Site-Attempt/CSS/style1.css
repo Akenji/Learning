@@ -1,0 +1,53 @@
+body {
+    background: url("../Images/Screenshot_20230505-072413~2.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#motto {
+    font-style: italic;
+    color: blue;
+}
+
+#table {
+    border: 6px double green;
+    background-color:rgb(33, 107, 136) ;
+}
+#main-table {
+    background-color: black;
+}
+
+#sub-title {
+    animation-name: black-to-red;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes black-to-red {
+    0% {background: rgb(92, 62, 62); transform: translate(0px, 0px);}
+    50% {background: rgb(175, 175, 15);  transform: translate(10px, 10px);}
+    75% {background: slateblue; transform: translate(20px, 20px);}
+    100% {background: rgb(175, 41, 41);  transform: translate(25px, 25px);}
+}
+
+.paragraphs {
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+#img {
+    float: left;
+    border: 6px double red;
+}
+
+#ordered-list {
+color: rgb(217, 225, 243);
+
+h3 {
+    color: black;
+    text-decoration: underline;
+}
+

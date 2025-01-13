@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Registration Form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body>
+    
+    <table width="100%" height="60" border="1" cellspacing="5" cellpadding="5" bgcolor="#000000">
+        <tr>
+            <td align="left">
+                <table width="547" border="0" cellspacing="1" cellpadding="1" align="center">
+                    <td width="96"><font face="sans-serif" color="white"><h3>Home</h3></font></td>
+                    <td width="96"><font face="sans-serif" color="white"><h3>About</h3></font></td>
+                    <td width="96"><font face="sans-serif" color="white"><h3>Service</h3></font></td>
+                    <td width="96"><font face="sans-serif" color="white"><h3>Clients</h3></font></td>
+                    <td width="96"><font face="sans-serif" color="white"><h3>Contacts</h3></font></td>
+                </table>
+                </td>
+                </tr>
+                </table>
+<form name="Registration" action="send.php" method="post">
+<table width="300" border="1" cellspacing="0" cellpadding="0">
+<tr>
+    <td nowrap>Registration Form</td>
+</tr>
+<tr>
+    <td>First Name</td>
+    <td><input type="text" name="fname" maxlength="50"/></td>
+</tr>
+<tr>
+    <td>Last Name</td>
+        <td><input type="text" name="lname" maxlength="50"/></td>
+</tr>
+<td>School You're Currently attending</td>
+<td>
+    <select name="school">
+        <option>choose</option>
+        <option value="gl">GHS Limbe</option>
+        <option value="bl">GBHS Limbe</option>
+        <option value="pb">PCSS Buea</option>
+        <option value="sf">St Federick Bamenda</option>
+        <option value="ss">Sase</option>
+        <option value="pg">PGSS Limbe</option>
+        <option value="sk">Saker Baptist Coledge</option>
+    </select>
+</td>
+<tr>
+    <td>choose level to load courses</td>
+    <td>
+        <select name="level">
+            <option value="l2">Level200</option>
+            <option value="l3">Level300</option>
+            <option value="l4">Level400</option>
+            <option value="l5">Level500</option>
+        </select>
+    </td>
+</tr>
+    <td>courses</td>
+    <td>
+    <select name="course">
+        <option value="m">Mathematics</option>
+        <option value="py">Physics</option>
+        <option value="e">English</option>
+        <option value="ps">psychology</option>
+    </select>
+    </td>
+    <tr>
+        <td>how did you find out about our school?</td>
+        <td>
+        <input type="checkbox" name="yt"/> YouTube
+        <input type="checkbox" name="f"/> A Friend
+        <input type="checkbox" name="o"/>others 
+        </td>
+    </tr>
+    <tr>
+        <td>why do you want to study in our institution?</td>
+        <td>
+        <input type="radio" name="Estatus" value="h"/> Heard it's a good school
+        <input type="radio" name="Estatus" value="c"/> cheap  tution fee
+        <input type="radio" name="Estatus" value="gs"/> good staff
+        </td>
+    </tr>
+    <tr colspan="2">
+        <td>or type in your own reason</td>
+        <td><input type="text" placeholder="textarea"></td>
+    </tr>
+</table>
+<input type="email" placeholder="Email"><br>
+<button>submit</button>
+<input type="reset" name="reset" value="reset"><br>
+</form>
+
+</body>
+</html>
